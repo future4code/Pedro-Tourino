@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TECH PLACE - Adicionar produto</title>
+  </head>
+
+  <body>
+    <a href="index.html"><h1>TECH PLACE</h1></a>
+
+    <nav>
+      <small>
+        <fieldset>
+          <a href="index.html">INÍCIO</a>
+          &nbsp&nbsp
+          <a href="estoque.html">ESTOQUE</a>
+          &nbsp&nbsp
+          <a href="adiciona_produto.html">ADICIONAR PRODUTO</a>
+          &nbsp&nbsp
+          <a href="funcionarios.html">FUNCIONÁRIOS</a>
+        </fieldset>
+      </small>
+    </nav>
+
+    <br />
+
+    <form action="#">
+      <fieldset>
+        <legend>
+          <strong>ADICIONAR PRODUTO</strong>
+        </legend>
+
+        <br />
+
+        <label for="img">Selecione uma imagem:</label>
+        <input type="file" id="img" name="img" accept="image/*" />
+
+        <br /><br />
+
+        <div>
+          <label for="descricao">DESCRIÇÃO:</label>
+          <input
+            type="text"
+            id="descricao"
+            name="descricao"
+            placeholder="Descrição do produto"
+          />
+          &nbsp&nbsp
+          <label for="preco">PREÇO:</label>
+          <input
+            type="text"
+            id="preco"
+            name="preco"
+            placeholder="Valor do produto"
+          />
+          &nbsp&nbsp
+          <label for="qtd">QUANTIDADE:</label>
+          <input
+            type="text"
+            id="qtd"
+            name="qtd"
+            placeholder="Quantidade disponível"
+          />
+        </div>
+
+        <br />
+
+        <button type="submit">Adicionar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
