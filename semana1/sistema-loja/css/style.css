@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  display: block;
+  background-color: #202b39;
+}
+
+.nav-menu {
+  display: inline;
+}
+
+.nav-item {
+  display: inline;
+}
