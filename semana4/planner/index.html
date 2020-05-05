@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+
+    <title>Week Planner</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <label for="task">Tarefa:</label>
+      <input type="text" name="task" id="task" placeholder="Digite a tarefa" />
+
+      <select name="weekDay" id="weekDay">
+        <option selected hidden disabled>Escolha uma opção</option>
+        <option value="monday">Segunda-Feira</option>
+        <option value="tuesday">Terça-Feira</option>
+        <option value="wednesday">Quarta-Feira</option>
+        <option value="thursday">Quinta-Feira</option>
+        <option value="friday">Sexta-Feira</option>
+        <option value="saturday">Sábado</option>
+        <option value="sunday">Domingo</option>
+      </select>
+
+      <button onclick="addTask()">Adicionar</button>
+    </nav>
+
+    <main>
+      <div id="monday">
+        <h2>Segunda-Feira</h2>
+        <ul class="taskList"></ul>
+      </div>
+
+      <div id="tuesday">
+        <h2>Terça-Feira</h2>
+        <ul class="taskList"></ul>
+      </div>
+
+      <div id="wednesday">
+        <h2>Quarta-Feira</h2>
+        <ul class="taskList"></ul>
+      </div>
+
+      <div id="thursday">
+        <h2>Quinta-Feira</h2>
+        <ul class="taskList"></ul>
+      </div>
+
+      <div id="friday">
+        <h2>Sexta-Feira</h2>
+        <ul class="taskList"></ul>
+      </div>
+
+      <div id="saturday">
+        <h2>Sábado</h2>
+        <ul class="taskList"></ul>
+      </div>
+
+      <div id="sunday">
+        <h2>Domingo</h2>
+        <ul class="taskList"></ul>
+      </div>
+    </main>
+  </body>
+</html>
