@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <form>
+      <label for="postCategory">Categoria:</label>
+      <select name="postCategory" id="postCategory">
+        <option selected hidden disabled>Escolha a categoria</option>
+        <option value="cat1">cat1</option>
+        <option value="cat2">cat2</option>
+        <option value="cat3">cat3</option>
+        <option value="cat4">cat4</option>
+        <option value="cat5">cat5</option>
+      </select>
+
+      <label for="postTopic">Tópico:</label>
+      <input
+        type="text"
+        name="postTopic"
+        id="postTopic"
+        placeholder="Escreva o tópico"
+      />
+
+      <br /><br />
+
+      <label for="postTitle">Título:</label>
+      <input
+        type="text"
+        name="postTitle"
+        id="postTitle"
+        placeholder="Escreva o título"
+      />
+
+      <label for="postAuthor">Autor:</label>
+      <input
+        type="text"
+        name="postAuthor"
+        id="postAuthor"
+        placeholder="Escreva seu nome"
+      />
+
+      <br /><br />
+
+      <label for="postContent">Conteúdo:</label>
+      <textarea
+        name="postContent"
+        id="postContent"
+        cols="43"
+        rows="10"
+        placeholder="Escreva o conteúdo aqui..."
+      ></textarea>
+
+      <br /><br />
+
+      <button type="submit" onclick="post(event)">Publicar</button>
+    </form>
+  </body>
+</html>
