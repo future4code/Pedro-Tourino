@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { Button, List, ListItem, ListItemText } from "@material-ui/core";
 import { ListTripsPageContainer } from "./styles";
 
@@ -16,6 +17,7 @@ const ListTripsPage = () => {
             <ListItemText primary="Viagem para Marte" />
           </ListItem>
         </Link>
+
         <Link to={"/trip/details"}>
           <ListItem button>
             <ListItemText primary="Viagem para Lua" />

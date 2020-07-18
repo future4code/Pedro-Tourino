@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
+import MomentUtils from "@date-io/moment";
 import { CssBaseline } from "@material-ui/core";
-import styled from "styled-components";
+import { AppContainer } from "./styles";
 
 import HomePage from "./assets/pages/HomePage";
 import ApplicationFormPage from "./assets/pages/ApplicationFormPage";
@@ -11,41 +13,40 @@ import ListTripsPage from "./assets/pages/ListTripsPage";
 import CreateTripPage from "./assets/pages/CreateTripPage";
 import TripDetailsPage from "./assets/pages/TripDetailsPage";
 
-const AppContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
 const App = () => {
   return (
     <Router>
-      <CssBaseline />
-      <AppContainer>
-        <Switch>
-          <Route path="/">
-            <HomePage />
-          </Route>
-          <Route path="/application/form">
-            <ApplicationFormPage />
-          </Route>
-          <Route path="/login">
-            <LoginPage />
-          </Route>
-          <Route path="/list/trips">
-            <ListTripsPage />
-          </Route>
-          <Route path="/create/trip">
-            <CreateTripPage />
-          </Route>
-          <Route path="/trip/details">
-            <TripDetailsPage />
-          </Route>
-        </Switch>
-      </AppContainer>
+      <MuiPickersUtilsProvider utils={MomentUtils}>
+        <CssBaseline />
+
+        <AppContainer>
+          <Switch>
+            <Route path="/login">
+              <LoginPage />
+            </Route>
+
+            <Route path="/trip/details">
+              <TripDetailsPage />
+            </Route>
+
+            <Route path="/create/trip">
+              <CreateTripPage />
+            </Route>
+
+            <Route path="/list/trips">
+              <ListTripsPage />
+            </Route>
+
+            <Route path="/application/form">
+              <ApplicationFormPage />
+            </Route>
+
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+        </AppContainer>
+      </MuiPickersUtilsProvider>
     </Router>
   );
 };

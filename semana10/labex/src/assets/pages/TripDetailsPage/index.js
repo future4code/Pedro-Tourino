@@ -3,7 +3,7 @@ import React from "react";
 import { ContentContainer } from "./styles";
 
 import PageTitle from "../../components/PageTitle";
-import TripInfo from "./TripInfo";
+import TripInfoCard from "./TripInfoCard";
 import CandidatesList from "./CandidatesList";
 
 const TripDetailsPage = () => {
@@ -12,7 +12,7 @@ const TripDetailsPage = () => {
       <PageTitle title={"Detalhes da viagem"} />
 
       <ContentContainer>
-        <TripInfo />
+        <TripInfoCard />
         <CandidatesList />
       </ContentContainer>
     </div>

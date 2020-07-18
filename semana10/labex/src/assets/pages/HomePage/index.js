@@ -17,6 +17,7 @@ const HomePage = () => {
             Candidatar-se
           </Button>
         </Link>
+
         <Link to={"/login"}>
           <Button variant={"outlined"} color={"secondary"}>
             Área do administrador

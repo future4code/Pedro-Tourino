@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LoginForm = styled.form`
+export const FormContainer = styled.form`
   display: grid;
   gap: 16px;
 `;
