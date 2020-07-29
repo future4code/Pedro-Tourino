@@ -14,7 +14,7 @@ const HomePage = () => {
       <ButtonsContainer>
         <Link to={"/application/form"}>
           <Button variant={"contained"} color={"primary"}>
-            Candidatar-se
+            Quero me candidatar!
           </Button>
         </Link>
 

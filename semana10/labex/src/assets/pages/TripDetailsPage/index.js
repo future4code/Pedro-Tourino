@@ -12,7 +12,7 @@ const TripDetailsPage = () => {
       <PageTitle title={"Detalhes da viagem"} />
 
       <ContentContainer>
-        <TripInfoCard />
+        <TripInfoCard info={trip} />
         <CandidatesList />
       </ContentContainer>
     </div>

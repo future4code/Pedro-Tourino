@@ -5,31 +5,32 @@ import { Button, List, ListItem, ListItemText } from "@material-ui/core";
 import { ListTripsPageContainer } from "./styles";
 
 import PageTitle from "../../components/PageTitle";
+import { useListTrips } from "../../hooks/useListTrips";
 
 const ListTripsPage = () => {
+  const trips = useListTrips();
+
   return (
     <ListTripsPageContainer>
       <PageTitle title={"Lista de viagens"} />
-
-      <List component="nav" aria-label="secondary mailbox folders">
-        <Link to={"/trip/details"}>
-          <ListItem button>
-            <ListItemText primary="Viagem para Marte" />
-          </ListItem>
-        </Link>
-
-        <Link to={"/trip/details"}>
-          <ListItem button>
-            <ListItemText primary="Viagem para Lua" />
-          </ListItem>
-        </Link>
-      </List>
 
       <Link to={"/create/trip"}>
         <Button variant={"contained"} color={"primary"}>
           Criar viagem
         </Button>
       </Link>
+
+      <List component="nav">
+        {trips.map((trip) => {
+          return (
+            <Link to={"/trip/details"}>
+              <ListItem button>
+                <ListItemText primary={trip.name} />
+              </ListItem>
+            </Link>
+          );
+        })}
+      </List>
     </ListTripsPageContainer>
   );
 };
