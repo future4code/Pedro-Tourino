@@ -1,0 +1,7 @@
+npm i axios
+npm install react-router-dom
+npm i styled-components
+npm install @material-ui/core
+npm i @material-ui/icons
+npm i @material-ui/pickers
+npm i @date-io/moment@1.x moment
