@@ -1,104 +1,67 @@
-/*
-  a)
+// a)
 
-  const minhaString: string = 1;
+const minhaString: string = "a";
+// const minhaString: string = 1;
 
-  problem: Type '1' is not assignable to type 'string'
-           O tipo '1' não é atribuível ao tipo 'string'
-*/
+// problem: Type '1' is not assignable to type 'string'
+//          O tipo '1' não é atribuível ao tipo 'string'
 
-/*
-  b)
+console.log(minhaString);
 
-  const meuNumero: number | string = 1;
-  const meuNumero: number | string = "1";
-  const meuNumero: number | undefined = "a";
-  const meuNumero: (number | string)[] = [1, "1", "a"];
-*/
+/* ----------------------------------------------------------------- */
 
-/*
-  c)
+// b)
 
-  const person: { name: string; age: number } = {
-    name: "Pedro",
-    age: 32,
-  };
-*/
+const meuNumero: number | string = 1;
+// const meuNumero: number | string = "1";
+// const meuNumero: number | undefined = "a";
+// const meuNumero: (number | string)[] = [1, "1", "a"];
 
-/*
-  d)
+console.log(meuNumero);
 
-  type person = {
-    name: string;
-    age: number;
-  };
+/* ----------------------------------------------------------------- */
 
-  const person1: person = {
-    name: "Pedro",
-    age: 32
-  }
+// c)
 
-  const person2: person = {
-    name: "Clara",
-    age: 27
-  }
+type person = {
+  name: string;
+  age: number;
+  favoriteColor: CORES;
+};
 
-  const person3: person = {
-    name: "Duke",
-    age: 1
-  }
-*/
+/* ----------------------------------------------------------------- */
 
-/*
-  e)
-  
-  enum CORES {
-    VIOLETA = "Violeta",
-    AZUL = "Azul",
-    ANIL = "Anil",
-    VERDE = "Verde",
-    AMARELO = "Amarelo",
-    LARANJA = "Laranja",
-    VERMELHO = "Vermelho",
-  }
+// d) & e)
 
-  type arcoIris = {
-    cor: CORES;
-    posicaoFaixa: number;
-  };
+enum CORES {
+  VIOLETA = "Violeta",
+  INDIGO = "Indigo",
+  AZUL = "Azul",
+  VERDE = "Verde",
+  AMARELO = "Amarelo",
+  LARANJA = "Laranja",
+  VERMELHO = "Vermelho",
+}
 
-  const faixa1: arcoIris = {
-    cor: CORES.VIOLETA,
-    posicaoFaixa: 1,
-  };
+const person1: person = {
+  name: "Pedro",
+  age: 32,
+  favoriteColor: CORES.AZUL,
+};
 
-  const faixa2: arcoIris = {
-    cor: CORES.AZUL,
-    posicaoFaixa: 2,
-  };
+const person2: person = {
+  name: "Clara",
+  age: 27,
+  favoriteColor: CORES.AMARELO,
+};
 
-  const faixa3: arcoIris = {
-    cor: CORES.ANIL,
-    posicaoFaixa: 3,
-  };
+const person3: person = {
+  name: "Duke",
+  age: 1,
+  favoriteColor: CORES.INDIGO,
+};
 
-  const faixa4: arcoIris = {
-    cor: CORES.VERDE,
-    posicaoFaixa: 4,
-  };
-
-  const faixa5: arcoIris = {
-    cor: CORES.AMARELO,
-    posicaoFaixa: 5,
-  };
-
-  const faixa6: arcoIris = {
-    cor: CORES.LARANJA,
-    posicaoFaixa: 6,
-  };
-
-  const faixa7: arcoIris = {
-    cor: CORES.VERMELHO,
-    posicaoFaixa: 7,
-  };
-*/
+console.log(CORES);
+console.log(person1);
+console.log(person2);
+console.log(person3);
