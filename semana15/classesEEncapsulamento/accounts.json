@@ -1,0 +1,14 @@
+[
+  {
+    "balance": 0,
+    "cpf": "12345678910",
+    "name": "Pedro Tourino",
+    "age": 32
+  },
+  {
+    "balance": 0,
+    "cpf": "12345678988",
+    "name": "Astrodev",
+    "age": 20
+  }
+]
