@@ -30,4 +30,4 @@ CREATE TABLE Actor (
 
 **c)**
 
-- _`DESCRIBE Actor`_: mostra a estrutura da tabela, com o nome e as propriedades de cada campo.
+- _`DESCRIBE Actor`_: Mostra a estrutura da tabela, e os tipos de cada campo.
