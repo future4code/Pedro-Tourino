@@ -13,7 +13,7 @@
 **b)**
 
 ```SQL
-  // Search By Name Endpoint
+  /* Search By Name Endpoint */
   app.get('/search/:name', searchByName);
 
   async function searchByName(req: Request, res: Response): Promise<any> {
@@ -35,7 +35,7 @@
 **c)**
 
 ```SQL
-  // Count By Gender Endpoint
+  /* Count By Gender Endpoint */
   app.get('/count/:gender', countByGender);
 
   async function countByGender(req: Request, res: Response): Promise<any> {
@@ -64,7 +64,7 @@
 **a)**
 
 ```SQL
-  // Update Salary by Id
+  /* Update Salary by Id */
   app.put('/edit/salary', editSalaryById);
 
   async function editSalaryById(req: Request, res: Response): Promise<any> {
@@ -86,7 +86,7 @@
 **b)**
 
 ```SQL
-  // Delete Actor by Id
+  /* Delete Actor by Id */
   app.delete('/delete/actor/', deleteActorById);
 
   async function deleteActorById(req: Request, res: Response): Promise<any> {
@@ -105,7 +105,7 @@
 **c)**
 
 ```SQL
-  // Calculate Average Salary By Gender
+  /* Calculate Average Salary By Gender */
   app.get('/average/:gender', averageSalaryByGender);
 
   async function averageSalaryByGender(
@@ -148,7 +148,7 @@
 **c)**
 
 ```SQL
-  // Count By Gender Endpoint With Query Params
+  /* Count By Gender Endpoint With Query Params */
   app.get('/actor?', countByGenderWithQuery);
 
   async function countByGenderWithQuery(
@@ -176,9 +176,15 @@
 
 ## Exercício 4
 
-- a) Igual ao Exercício 2 a.
+**a)**
 
-- b) Igual ao Exercício 2 b.
+- Igual ao Exercício 2 a.
+
+&nbsp;
+
+**b)**
+
+- Igual ao Exercício 2 b.
 
 &nbsp;
 
@@ -189,7 +195,7 @@
 ## Exercício 5
 
 ```SQL
-  // Add Film to Table
+  /* Add Film to Table */
   app.post('/movie', addFilm);
 
   async function addFilm(req: Request, res: Response): Promise<any> {
@@ -221,7 +227,7 @@
 ## Exercício 6
 
 ```SQL
-  // Get All Films
+  /* Get All Films */
   app.get('/movie/all', getAllMovies);
 
   async function getAllMovies(req: Request, res: Response): Promise<any> {
@@ -244,7 +250,7 @@
 ## Exercício 7
 
 ```SQL
-  // Search Movie By Query Text
+  /* Search Movie By Query Text */
   app.get('/movie/search', searchMovieByText);
 
   async function searchMovieByText(req: Request, res: Response): Promise<any> {
