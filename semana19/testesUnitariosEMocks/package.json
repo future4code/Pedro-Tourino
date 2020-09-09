@@ -1,0 +1,19 @@
+{
+  "name": "testesunitariosemocks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev ./src/index.ts",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@types/node": "^14.6.4",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {}
+}
