@@ -24,7 +24,12 @@ function retornaArrayOrdenado(array) {
 console.log(retornaArrayOrdenado(numeros3));
 
 // EXERCÍCIO 04
-function retornaNumerosPares(array) {}
+const numeros4 = [1, 2, 3, 4, 5, 6];
+function retornaNumerosPares(array) {
+  if (array % 2 === 0) return array;
+}
+const numerosPares1 = numeros4.filter(retornaNumerosPares);
+console.log(numerosPares1);
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {}
