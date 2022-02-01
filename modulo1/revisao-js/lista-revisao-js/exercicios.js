@@ -17,7 +17,11 @@ function retornaArrayInvertido(array) {
 console.log(retornaArrayInvertido(numeros2));
 
 // EXERCÍCIO 03
-function retornaArrayOrdenado(array) {}
+const numeros3 = [3, 2, 1, 4, 7];
+function retornaArrayOrdenado(array) {
+  return array.sort();
+}
+console.log(retornaArrayOrdenado(numeros3));
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {}
