@@ -3,11 +3,11 @@
 //    -> NÃO MODIFIQUE OS PARÂMETROS DAS FUNÇÕES!!! ()
 
 // EXERCÍCIO 01
-const numeros = [3, 2, 1, 4, 7];
+const numeros1 = [3, 2, 1, 4, 7];
 function retornaTamanhoArray(array) {
   return array.length;
 }
-console.log(retornaTamanhoArray(numeros));
+console.log(retornaTamanhoArray(numeros1));
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {}
