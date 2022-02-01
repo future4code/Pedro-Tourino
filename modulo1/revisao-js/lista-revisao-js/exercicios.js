@@ -32,7 +32,15 @@ const numerosPares1 = numeros4.filter(retornaNumerosPares);
 console.log(numerosPares1);
 
 // EXERCÍCIO 05
-function retornaNumerosParesElevadosADois(array) {}
+const numeros5 = [1, 2, 3, 4, 5, 6];
+function retornaNumerosParesElevadosADois(array) {
+  if (array % 2 === 0) return array;
+}
+const numerosPares2 = numeros4.filter(retornaNumerosParesElevadosADois);
+const numerosParesAoQuadrado = numerosPares2.map((array) => {
+  return Math.pow(array, 2);
+});
+console.log(numerosParesAoQuadrado);
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {}
