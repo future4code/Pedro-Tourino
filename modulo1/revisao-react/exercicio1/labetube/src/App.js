@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { VideoCard } from "./components/video-card/video-card";
+import { MenuListItem } from "./components/menu-list-item/menu-list-item";
 
 export default function App() {
   const titulo = "Título do vídeo";
@@ -19,12 +20,12 @@ export default function App() {
         <main>
           <nav className="menu-vertical">
             <ul>
-              <li className="botoes-meunu-vertical">Início</li>
-              <li className="botoes-meunu-vertical">Em alta</li>
-              <li className="botoes-meunu-vertical">Inscrições</li>
+              <MenuListItem item={"Início"} />
+              <MenuListItem item={"Em alta"} />
+              <MenuListItem item={"Inscrições"} />
               <hr />
-              <li className="botoes-meunu-vertical">Originais</li>
-              <li className="botoes-meunu-vertical">Histórico</li>
+              <MenuListItem item={"Originais"} />
+              <MenuListItem item={"Histórico"} />
             </ul>
           </nav>
 
